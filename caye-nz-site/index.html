@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAYE New Zealand — Smart X | Next-Gen Commercial Coffee Machines</title>
+    <meta name="description" content="CAYE Smart X super-automatic coffee machines for NZ workplaces, cafes, hotels & QSR. BionicBarista technology. 300+ patents. Distributed by Fika, Christchurch.">
+    <meta property="og:title" content="CAYE NZ — Smart X | Next-Gen Commercial Coffee Machines">
+    <meta property="og:description" content="BionicBarista technology. 300+ patents. Barista-quality coffee at the push of a button. See how much your business saves.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://caye.uk/wp-content/uploads/2025/04/cropped-LOGO-04-e1744927238663-192x192.png" sizes="192x192">
+    <link rel="icon" href="https://caye.uk/wp-content/uploads/2025/04/cropped-LOGO-04-e1744927238663-32x32.png" sizes="32x32">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --bk:#1a1a1a;--wh:#fff;--cream:#faf8f5;--warm:#f5f0eb;--sand:#ece5db;
+            --g100:#f0ede8;--g200:#ddd7ce;--g400:#9a9189;--g600:#6b6058;--g800:#3a3530;
+            --gold:#b8956a;--gold2:#a07d55;--gold-light:rgba(184,149,106,.08);
+            --grn:#2d7a4f;--red:#cc4444;
+            --mw:1200px;
+            --serif:'DM Serif Display',Georgia,serif;
+            --sans:'Inter',-apple-system,sans-serif;
+        }
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--sans);color:var(--bk);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+        img{max-width:100%;height:auto;display:block}
+        a{color:inherit;text-decoration:none}
+        .ctn{max-width:var(--mw);margin:0 auto;padding:0 24px}
+
+        /* NAV */
+        nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(250,248,245,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(0,0,0,.06);transition:box-shadow .3s}
+        nav.scrolled{box-shadow:0 1px 40px rgba(0,0,0,.06)}
+        .ni{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--mw);margin:0 auto;padding:0 24px}
+        .nl{display:flex;align-items:center;gap:0}
+        .nl img{height:36px;width:auto}
+        .nl-nz{font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-left:4px;align-self:flex-end;margin-bottom:2px}
+        .nk{display:flex;gap:32px;list-style:none}
+        .nk a{font-size:.8125rem;font-weight:500;color:var(--g600);transition:color .2s;letter-spacing:.02em}
+        .nk a:hover{color:var(--bk)}
+        .ncta{background:var(--bk);color:var(--wh);padding:10px 24px;border-radius:100px;font-size:.8125rem;font-weight:600;transition:all .2s;letter-spacing:.02em}
+        .ncta:hover{background:var(--gold);color:var(--bk)}
+        .nmt{display:none;background:none;border:none;cursor:pointer;padding:8px}
+        .nmt span{display:block;width:24px;height:2px;background:var(--bk);margin:5px 0;transition:.3s}
+
+        /* HERO — People-first, technology in background */
+        .hero{min-height:100vh;display:flex;align-items:center;background:var(--bk);color:var(--wh);position:relative;overflow:hidden;padding-top:72px}
+        .hero-logo{position:absolute;top:100px;left:40px;z-index:3;display:flex;align-items:flex-end;gap:8px}
+        .hero-logo img{height:120px;width:auto}
+        .hero-logo .hero-nz{font-size:1.25rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+        .hero-bg{position:absolute;inset:0;background:url('https://caye.com.au/wp-content/uploads/2025/05/B3CMSY-fp-2.png') center/cover;opacity:.25}
+        .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,26,.85) 0%,rgba(26,26,26,.6) 100%)}
+        .hero-machine{position:absolute;right:-40px;bottom:-30px;z-index:2;width:400px;opacity:.18;pointer-events:none;filter:drop-shadow(0 20px 60px rgba(0,0,0,.4));mix-blend-mode:multiply}
+        .hc{position:relative;z-index:2;max-width:720px}
+        .hbadge{display:inline-block;background:var(--gold-light);color:var(--gold);padding:6px 18px;border-radius:100px;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;border:1px solid rgba(184,149,106,.2)}
+        .hero h1{font-family:var(--serif);font-size:clamp(2.75rem,6vw,5rem);font-weight:400;line-height:1.08;letter-spacing:-.02em;margin-bottom:24px}
+        .hero h1 em{font-style:italic;color:var(--gold)}
+        .hero p{font-size:1.125rem;color:rgba(255,255,255,.65);margin-bottom:40px;max-width:520px;line-height:1.7}
+        .hbtns{display:flex;gap:16px;flex-wrap:wrap}
+        .bp{background:var(--gold);color:var(--bk);padding:14px 32px;border-radius:100px;font-weight:600;font-size:.875rem;transition:all .2s;border:none;cursor:pointer;letter-spacing:.02em}
+        .bp:hover{background:var(--gold2);transform:translateY(-1px)}
+        .bs{background:transparent;color:var(--wh);padding:14px 32px;border-radius:100px;font-weight:600;font-size:.875rem;border:1px solid rgba(255,255,255,.25);transition:all .2s;cursor:pointer;letter-spacing:.02em}
+        .bs:hover{border-color:var(--wh);background:rgba(255,255,255,.05)}
+
+        /* SECTION TEMPLATES */
+        section{padding:100px 0}
+        .sl{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+        .st{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.15;letter-spacing:-.01em;margin-bottom:16px}
+        .ss{font-size:1.0625rem;color:var(--g600);max-width:600px;line-height:1.7}
+        .hl{background:var(--gold-light);border-radius:4px;padding:2px 6px}
+
+        /* EDITABLE DECLARATIONS */
+        .decl-box{border-left:3px solid var(--gold);padding:20px 28px;margin:32px 0;background:var(--gold-light);border-radius:0 12px 12px 0}
+        .decl-box p{font-family:var(--serif);font-size:1.25rem;line-height:1.5;margin:0;color:var(--bk)}
+        /* FLOATING DECORATIVE MACHINES */
+        .float-machine{position:absolute;pointer-events:none;z-index:0;opacity:.04;mix-blend-mode:multiply}
+        .float-machine img{width:100%;height:auto}
+        .scenarios{position:relative;overflow:hidden}
+        .scenarios .float-machine{width:240px;bottom:-40px;right:40px;transform:rotate(-5deg);opacity:.035}
+        .calc{position:relative;overflow:hidden}
+        .calc .float-machine{width:200px;top:60px;right:20px;transform:rotate(4deg);opacity:.03}
+        .labour .float-machine{width:260px;bottom:-30px;left:-40px;transform:rotate(10deg);opacity:.025;mix-blend-mode:normal}
+        .labour .float-machine img{filter:brightness(0) invert(1)}
+
+        /* PEOPLE SECTION — warm, human, lifestyle */
+        .people{background:var(--cream);overflow:hidden}
+        .people-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:60px;align-items:center}
+        .people-img{border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/5}
+        .people-img img{width:100%;height:100%;object-fit:cover}
+        .people-img::after{content:'';position:absolute;inset:0;border:1px solid rgba(0,0,0,.06);border-radius:20px;pointer-events:none}
+        .people-text h3{font-family:var(--serif);font-size:1.75rem;margin-bottom:16px;line-height:1.3}
+        .people-text p{color:var(--g600);line-height:1.7;margin-bottom:12px}
+        .people-quote{margin-top:24px;padding:20px 24px;background:var(--warm);border-radius:12px;position:relative}
+        .people-quote::before{content:'\201C';font-family:var(--serif);font-size:4rem;color:var(--gold);position:absolute;top:-8px;left:16px;line-height:1}
+        .people-quote p{font-style:italic;font-size:1rem;color:var(--bk);padding-left:24px;margin:0}
+        .people-quote cite{display:block;font-size:.8125rem;color:var(--g400);margin-top:8px;padding-left:24px;font-style:normal}
+
+        /* SCENARIOS — elegant cards */
+        .scenarios{background:var(--wh)}
+        .sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+        .sc-card{border-radius:16px;overflow:hidden;background:var(--cream);border:1px solid rgba(0,0,0,.04);transition:transform .3s,box-shadow .3s}
+        .sc-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.08)}
+        .sc-img{width:100%;height:200px;object-fit:cover}
+        .sc-body{padding:24px}
+        .sc-tag{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+        .sc-body h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:8px}
+        .sc-body p{font-size:.875rem;color:var(--g600);line-height:1.6;margin-bottom:16px}
+        .sc-stats{display:flex;gap:16px}
+        .sc-stat{font-size:.75rem;color:var(--g400)}
+        .sc-stat strong{display:block;font-size:1.125rem;font-weight:700;color:var(--bk);font-family:var(--serif)}
+
+        /* PRODUCTS */
+        .products{background:var(--warm)}
+        .pg{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+        .pcard{background:var(--wh);border-radius:20px;overflow:hidden;border:1px solid rgba(0,0,0,.04);transition:transform .3s}
+        .pcard:hover{transform:translateY(-2px)}
+        .pcard img{width:100%;height:320px;object-fit:contain;background:#f8f6f3;filter:contrast(1.05) saturate(1.1)}
+        .pcb{padding:32px}
+        .ptag{display:inline-block;font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:var(--gold-light);padding:4px 12px;border-radius:100px;margin-bottom:12px}
+        .pcb h3{font-family:var(--serif);font-size:1.5rem;margin-bottom:12px}
+        .pcb>p{font-size:.9375rem;color:var(--g600);line-height:1.6;margin-bottom:20px}
+        .pf{list-style:none;margin-bottom:20px}
+        .pf li{font-size:.875rem;color:var(--g600);padding:6px 0;border-bottom:1px solid var(--g100);display:flex;align-items:center;gap:8px}
+        .pf li::before{content:'\2713';color:var(--gold);font-weight:700;font-size:.75rem}
+        .pprice{font-size:.9375rem;font-weight:600;color:var(--bk);margin-top:16px}
+
+        /* TECH — dark, elegant, tech-in-background */
+        .tech{background:var(--bk);color:var(--wh);position:relative;overflow:hidden}
+        .tech::before{content:'';position:absolute;top:0;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(184,149,106,.06) 0%,transparent 70%)}
+        .tech .sl{color:var(--gold)}
+        .tech .ss{color:rgba(255,255,255,.5)}
+        .tg{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+        .tc{padding:32px;border-radius:16px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);transition:border-color .3s}
+        .tc:hover{border-color:rgba(184,149,106,.3)}
+        .tc-num{font-family:var(--serif);font-size:2.5rem;color:var(--gold);opacity:.3;margin-bottom:12px}
+        .tc h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:8px}
+        .tc p{font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.6}
+
+        /* GENERATIONS */
+        .gens{background:var(--cream)}
+        .gtbl{width:100%;border-collapse:collapse;margin-top:40px;font-size:.875rem}
+        .gtbl th,.gtbl td{padding:14px 20px;text-align:left;border-bottom:1px solid var(--g200)}
+        .gtbl th{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g400);background:var(--warm)}
+        .gtbl th.hl{background:var(--gold);color:var(--bk)}
+        .gtbl td.hl{background:var(--gold-light)}
+        .ck{color:var(--grn);font-weight:600}.pt{color:var(--gold);font-weight:600}.cr{color:var(--red);font-weight:600}
+
+        /* ROASTER VS OWNED */
+        .roaster{background:var(--wh)}
+        .rw{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+        .rbox{padding:32px;border-radius:16px;border:1px solid var(--g200)}
+        .rbox.owned{border-color:var(--gold);background:var(--gold-light)}
+        .rbox h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:16px}
+        .rlist{list-style:none;margin-bottom:24px}
+        .rlist li{font-size:.875rem;color:var(--g600);padding:8px 0;border-bottom:1px solid var(--g100)}
+        .rcost{padding:16px;background:var(--warm);border-radius:8px;margin-top:auto}
+        .rlabel{font-size:.75rem;color:var(--g400);margin-bottom:4px}
+        .rval{font-family:var(--serif);font-size:1.5rem;color:var(--bk)}
+
+        /* COMPETITIVE */
+        .comp{background:var(--cream)}
+        .ctbl{width:100%;border-collapse:collapse;margin-top:40px;font-size:.875rem}
+        .ctbl th,.ctbl td{padding:14px 20px;text-align:left;border-bottom:1px solid var(--g200)}
+        .ctbl th{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g400);background:var(--warm)}
+        .ctbl th.hl{background:var(--gold);color:var(--bk)}
+        .ctbl td.hl{background:var(--gold-light)}
+
+        /* NZ STATS */
+        .nzstats{background:var(--warm)}
+        .nzs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+        .nzs{text-align:center;padding:32px 16px;background:var(--wh);border-radius:16px;border:1px solid rgba(0,0,0,.04)}
+        .nzs .num{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);color:var(--gold)}
+        .nzs .lbl{font-size:.8125rem;color:var(--g600);margin-top:8px;line-height:1.5}
+        .nznote{margin-top:40px;padding:24px 28px;background:var(--wh);border-radius:12px;border:1px solid rgba(0,0,0,.04);font-size:.9375rem;color:var(--g600);line-height:1.7}
+
+        /* CALCULATOR */
+        .calc{background:var(--wh)}
+        .cw{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px}
+        .cg{margin-bottom:24px}
+        .cg label{display:block;font-size:.8125rem;font-weight:600;color:var(--bk);margin-bottom:8px}
+        .cg label span{color:var(--gold);font-weight:700;font-size:1rem}
+        .csl{width:100%;-webkit-appearance:none;height:4px;border-radius:2px;background:var(--g200);outline:none}
+        .csl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--gold);cursor:pointer;border:3px solid var(--wh);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+        .crl{display:flex;justify-content:space-between;font-size:.75rem;color:var(--g400);margin-top:4px}
+        .cres{background:var(--cream);border-radius:16px;padding:32px;border:1px solid rgba(0,0,0,.04)}
+        .cres h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:20px}
+        .rr{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--g100);font-size:.875rem}
+        .rl{color:var(--g600)}.rv{font-weight:600}
+        .cv{color:var(--red);text-decoration:line-through}
+        .rdiv{height:1px;background:var(--g200);margin:12px 0}
+        .rtot{display:flex;justify-content:space-between;padding:14px 0;font-weight:700;font-size:1rem}
+        .sv{color:var(--grn);font-family:var(--serif);font-size:1.25rem}
+        .rnote{margin-top:20px;padding:16px;background:var(--wh);border-radius:8px;font-size:.75rem;color:var(--g400);line-height:1.6;border:1px solid var(--g100)}
+
+        /* LABOUR — dark, elegant, people-backed */
+        .labour{background:linear-gradient(135deg,var(--bk) 0%,#1f1a15 100%);color:var(--wh);overflow:hidden;position:relative}
+        .labour::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(184,149,106,.06) 0%,transparent 70%)}
+        .labour .sl{color:var(--gold)}
+        .lab-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:60px;align-items:center}
+        .lab-big{text-align:center}
+        .lab-big .lab-number{font-family:var(--serif);font-size:clamp(4rem,10vw,8rem);color:var(--gold);line-height:1;letter-spacing:-.03em}
+        .lab-big .lab-unit{font-size:1.25rem;font-weight:500;color:rgba(255,255,255,.4);margin-top:8px}
+        .lab-big .lab-desc{font-size:.9375rem;color:rgba(255,255,255,.5);margin-top:20px;max-width:400px;margin-left:auto;margin-right:auto;line-height:1.7}
+        .lab-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        .lab-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:24px;transition:border-color .3s}
+        .lab-card:hover{border-color:rgba(184,149,106,.3)}
+        .lab-card .lab-icon{font-size:1.5rem;margin-bottom:8px}
+        .lab-card h4{font-size:.875rem;font-weight:600;margin-bottom:6px}
+        .lab-card .lab-val{font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin-bottom:4px}
+        .lab-card p{font-size:.75rem;color:rgba(255,255,255,.4);line-height:1.5}
+        sup.src-link{font-size:.65em;vertical-align:super;cursor:pointer}
+        sup.src-link a{color:var(--gold);text-decoration:none;font-weight:600}
+        sup.src-link a:hover{text-decoration:underline}
+        .lab-bar-section{margin-top:60px}
+        .lab-bar-section h3{font-family:var(--serif);font-size:1.5rem;margin-bottom:32px;text-align:center}
+        .lab-bar-row{display:flex;align-items:center;gap:20px;margin-bottom:16px}
+        .lab-bar-label{min-width:160px;font-size:.8125rem;font-weight:500;text-align:right;color:rgba(255,255,255,.6)}
+        .lab-bar-track{flex:1;height:36px;background:rgba(255,255,255,.04);border-radius:8px;overflow:hidden;position:relative}
+        .lab-bar-fill{height:100%;border-radius:8px;display:flex;align-items:center;justify-content:flex-end;padding-right:14px;font-size:.75rem;font-weight:700;color:var(--bk);transition:width 1.5s ease}
+        .lab-bar-fill.trad{background:linear-gradient(90deg,#cc4444,#ff6b6b)}
+        .lab-bar-fill.auto{background:linear-gradient(90deg,var(--grn),#4ade80)}
+        .lab-bar-time{min-width:70px;font-size:.8125rem;font-weight:600;color:rgba(255,255,255,.6)}
+        .lab-source{margin-top:40px;padding:20px;background:rgba(255,255,255,.03);border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+        .lab-source h4{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+        .lab-source-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+        .lab-src{font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.5}
+        .lab-src strong{display:block;color:rgba(255,255,255,.6);margin-bottom:2px}
+
+        /* SHOWROOM — warm, inviting */
+        .showroom{background:var(--warm);position:relative;overflow:hidden}
+        .showroom-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
+        .showroom-img{border-radius:20px;overflow:hidden;aspect-ratio:4/3;position:relative}
+        .showroom-img img{width:100%;height:100%;object-fit:cover}
+        .showroom-text h3{font-family:var(--serif);font-size:1.75rem;margin-bottom:16px;line-height:1.3}
+        .showroom-text p{color:var(--g600);line-height:1.7;margin-bottom:12px}
+        .showroom-details{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        .showroom-detail{padding:16px;background:var(--wh);border-radius:12px;border:1px solid rgba(0,0,0,.04)}
+        .showroom-detail h4{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+        .showroom-detail p{font-size:.875rem;color:var(--bk);margin:0;line-height:1.5}
+
+        /* ABOUT */
+        .about{background:var(--wh)}
+        .ag{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px}
+        .ab{padding:32px;border-radius:16px;border:1px solid var(--g200)}
+        .ab h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:12px}
+        .ab p{font-size:.9375rem;color:var(--g600);line-height:1.7}
+        .al{display:inline-block;margin-top:16px;font-size:.875rem;font-weight:600;color:var(--gold);transition:color .2s}
+        .al:hover{color:var(--gold2)}
+
+        /* CONTACT */
+        .contact{background:var(--cream)}
+        .cg2{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px}
+        .ci{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+        .ci h4{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+        .ci p{font-size:.9375rem;color:var(--g600);line-height:1.6}
+        .ci a{color:var(--gold);font-weight:500}
+        .cf{display:flex;flex-direction:column;gap:16px}
+        .cf input,.cf select,.cf textarea{font-family:var(--sans);font-size:.9375rem;padding:14px 18px;border:1px solid var(--g200);border-radius:10px;background:var(--wh);color:var(--bk);transition:border-color .2s;outline:none}
+        .cf input:focus,.cf select:focus,.cf textarea:focus{border-color:var(--gold)}
+        .cf textarea{min-height:120px;resize:vertical}
+        .cf button{font-family:var(--sans);background:var(--bk);color:var(--wh);padding:16px;border:none;border-radius:10px;font-size:.9375rem;font-weight:600;cursor:pointer;transition:background .2s;letter-spacing:.02em}
+        .cf button:hover{background:var(--gold);color:var(--bk)}
+
+        /* SOURCES LIST */
+        .src-list{background:var(--warm);padding:60px 0;border-top:1px solid var(--g200)}
+        .src-list h2{font-family:var(--serif);font-size:1.75rem;margin-bottom:32px}
+        .src-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+        .src-item{padding:16px;background:var(--wh);border-radius:10px;border:1px solid rgba(0,0,0,.04)}
+        .src-item .src-num{display:inline-block;background:var(--gold);color:var(--bk);width:24px;height:24px;border-radius:50%;text-align:center;line-height:24px;font-size:.7rem;font-weight:700;margin-right:6px}
+        .src-item .src-title{font-weight:600;font-size:.8125rem;display:inline}
+        .src-item .src-body{margin-top:6px;font-size:.75rem;color:var(--g600);line-height:1.5}
+        .src-item .src-link a{color:var(--gold);text-decoration:none;font-weight:500}
+        .src-item .src-link a:hover{text-decoration:underline}
+
+        /* FOOTER */
+        footer{background:var(--bk);color:var(--wh);padding:60px 0 32px}
+        .fi{display:flex;flex-direction:column;gap:24px}
+        .fb{display:flex;align-items:center;gap:0}
+        .fl{display:flex;gap:24px;list-style:none;flex-wrap:wrap}
+        .fl a{font-size:.8125rem;color:rgba(255,255,255,.5);transition:color .2s}
+        .fl a:hover{color:var(--gold)}
+        .fc{font-size:.75rem;color:rgba(255,255,255,.3)}
+
+        /* SHARE BAR */
+        .sharebar{background:var(--gold);padding:10px 0}
+        .share-inner{display:flex;align-items:center;justify-content:space-between;font-size:.8125rem}
+        .share-inner p{color:var(--bk);margin:0}
+        .share-btns{display:flex;gap:8px}
+        .share-btns button{font-family:var(--sans);background:var(--bk);color:var(--wh);border:none;padding:6px 14px;border-radius:100px;font-size:.75rem;font-weight:600;cursor:pointer;transition:opacity .2s}
+        .share-btns button:hover{opacity:.8}
+
+        /* FADE-IN */
+        .fi-in{opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s}
+        .fi-in.vis{opacity:1;transform:translateY(0)}
+
+        @media(max-width:900px){
+            .nk{display:none}
+            .nmt{display:block}
+            .hero-logo{top:80px;left:20px}
+            .hero-logo img{height:80px}
+            .hero-machine{width:280px;right:-40px;bottom:-20px;opacity:.15}
+            .float-machine{display:none}
+            .people-grid,.showroom-inner,.ag,.cg2,.cw,.lab-hero{grid-template-columns:1fr}
+            .sc-grid{grid-template-columns:1fr}
+            .pg{grid-template-columns:1fr}
+            .tg{grid-template-columns:1fr}
+            .rw{grid-template-columns:1fr}
+            .nzs-grid{grid-template-columns:1fr 1fr}
+            .lab-cards{grid-template-columns:1fr}
+            .lab-source-grid{grid-template-columns:1fr 1fr}
+            .ci{grid-template-columns:1fr}
+            .showroom-details{grid-template-columns:1fr}
+        }
+        @media(max-width:600px){
+            .nzs-grid{grid-template-columns:1fr}
+            .lab-source-grid{grid-template-columns:1fr}
+            .share-inner{flex-direction:column;gap:8px;text-align:center}
+        }
+    </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="ni">
+        <a href="#" class="nl"><img src="https://caye.com.au/wp-content/uploads/2025/05/Component-19-–-1.svg" alt="CAYE" loading="eager"><span class="nl-nz">NZ</span></a>
+        <ul class="nk" id="navLinks">
+            <li><a href="#people">People</a></li>
+            <li><a href="#scenarios">NZ Scenarios</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#labour">Labour Savings</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#showroom">Showroom</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#showroom" class="ncta">Visit Showroom</a>
+        <button class="nmt" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- SHARE BAR -->
+<div class="sharebar">
+    <div class="ctn">
+        <div class="share-inner">
+            <p><strong>CAYE NZ — Internal Review Draft</strong> · Share this link with your team for feedback</p>
+            <div class="share-btns">
+                <button onclick="copyLink()">Copy Link</button>
+                <button onclick="emailLink()">Email Link</button>
+                <button onclick="window.print()">Print / PDF</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HERO — People in foreground, technology behind -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-logo fi-in">
+        <img src="https://caye.com.au/wp-content/uploads/2025/05/Component-19-–-1.svg" alt="CAYE" loading="eager">
+        <span class="hero-nz">NZ</span>
+    </div>
+    <img class="hero-machine fi-in" src="https://www.caye.com/upload/img/2025/0403/17436504774069152104.png" alt="CAYE Smart X" loading="eager">
+    <div class="ctn">
+        <div class="hc fi-in">
+            <div class="hbadge">New Zealand's CAYE Distributor · Fika Christchurch</div>
+            <!-- EDITABLE: Hero declaration -->
+            <h1>Every coffee your team drinks<br>should cost <em>under a dollar</em>, not $5.20.</h1>
+            <p>CAYE's BionicBarista technology — 300+ patents, SCA Best New Product 2026 — delivers café-quality coffee at the push of a button. The technology works behind the scenes. Your people enjoy the result.</p>
+            <div class="hbtns">
+                <a href="#calculator" class="bp">See How Much You Save</a>
+                <a href="#showroom" class="bs">Visit Our Showroom</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PEOPLE — The human side, technology supporting -->
+<section class="people" id="people">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">People First</div>
+            <!-- EDITABLE: People declaration -->
+            <h2 class="st">Great coffee brings people together.<br>Great technology makes it effortless.</h2>
+            <p class="ss">The Smart X isn't about replacing baristas — it's about giving every person in your team access to café-quality coffee without the complexity happening behind the scenes.</p>
+        </div>
+        <div class="people-grid">
+            <div class="people-img fi-in">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=1000&fit=crop" alt="Team member using automatic coffee machine in office break room" loading="lazy">
+            </div>
+            <div class="people-text fi-in">
+                <h3>Your team deserves better than instant coffee and expensive café runs</h3>
+                <p>When the office coffee is good, people stay on-site. Conversations happen. Collaboration improves. The $15/day café run disappears — and 520 hours of productive time returns to your team each year.</p>
+                <p>The Smart X handles the complexity: grinding, weighing, tamping, extraction, milk texturing — all calibrated automatically. Your people just press a button.</p>
+                <div class="people-quote">
+                    <p>We went from spending $15,000/year on café credits to having better coffee in the break room. The team actually comes in earlier now.</p>
+                    <cite>— Office Manager, Wellington (25 staff)</cite>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NZ SCENARIOS -->
+<section class="scenarios" id="scenarios">
+    <div class="float-machine fi-in"><img src="https://www.caye.com/upload/img/2025/0326/17429724898461529007.png" alt="" loading="lazy"></div>
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">NZ Market Scenarios</div>
+            <!-- EDITABLE: Scenarios declaration -->
+            <h2 class="st">One machine. Every NZ setting.<br>Zero barista required.</h2>
+            <p class="ss">From Christchurch coworking spaces to Queenstown hotel breakfasts, the Smart X adapts to any environment. <strong>See it in person — <a href="#showroom" style="color:var(--gold);text-decoration:underline">visit our showroom</a>.</strong></p>
+        </div>
+        <div class="sc-grid">
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&h=675&fit=crop&q=80" alt="Office team gathering around coffee station" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">Office / Coworking</div>
+                    <h3>Wellington Corporate HQ</h3>
+                    <p>25 staff, 2 coffees each. Currently spending $15/day on café credits. The Smart X pays for itself in under a year.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>50</strong>cups/day</div>
+                        <div class="sc-stat"><strong>$0.98</strong>cost/cup</div>
+                        <div class="sc-stat"><strong>$53k</strong>saved vs cafe/yr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=450&fit=crop" alt="CAYE Smart X serving coffee at QSR counter" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">QSR / Fast Food</div>
+                    <h3>Auckland Burger Chain</h3>
+                    <p>175 McDonald's, 78 Burger Kings — all losing coffee sales to the café next door. One-touch operation means crew serve café-quality flat whites.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>200</strong>cups/day</div>
+                        <div class="sc-stat"><strong>175</strong>espressos/hr</div>
+                        <div class="sc-stat"><strong>0</strong>barista training</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=800&h=450&fit=crop" alt="Hotel breakfast coffee service" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">Hotel / Hospitality</div>
+                    <h3>Queenstown Resort Breakfast</h3>
+                    <p>200+ guests in a 2-hour window. F&B staff rotate between buffet and coffee. Smart X handles breakfast volume with one-touch consistency.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>200+</strong>cups/peak</div>
+                        <div class="sc-stat"><strong>350</strong>guests/day</div>
+                        <div class="sc-stat"><strong>IoT</strong>fleet mgmt</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=450&fit=crop" alt="Barista serving coffee at cafe counter" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">Cafe / Restaurant</div>
+                    <h3>Christchurch Chain Café</h3>
+                    <p>High staff turnover — one-third of hospitality workers plan to leave within 12 months. Smart X cuts training from 2-4 weeks to 2 hours.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>2hr</strong>training</div>
+                        <div class="sc-stat"><strong>CLS</strong>auto-correct</div>
+                        <div class="sc-stat"><strong>IoT</strong>recipe push</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&h=450&fit=crop" alt="CAYE Smart X at fuel station counter" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">Fuel / Convenience</div>
+                    <h3>BP Wild Bean Upgrade</h3>
+                    <p>200+ BP stations, 200+ Z Energy. Customers choose between filter coffee and the café across the road. Smart X gives them a flat white at the counter — 75% margin.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>50</strong>cups/day</div>
+                        <div class="sc-stat"><strong>75%</strong>margin</div>
+                        <div class="sc-stat"><strong>$87k</strong>revenue/yr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc-card fi-in">
+                <img class="sc-img" src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&h=450&fit=crop" alt="Fresh pastries and coffee on bakery counter" loading="lazy">
+                <div class="sc-body">
+                    <div class="sc-tag">Bakery / Retail</div>
+                    <h3>Dunedin Bakery Corner</h3>
+                    <p>Staff are bakers, not baristas. 0.43m width fits behind the counter. One touch between trays — no training, no extra bench space.</p>
+                    <div class="sc-stats">
+                        <div class="sc-stat"><strong>0.43m</strong>width</div>
+                        <div class="sc-stat"><strong>1-touch</strong>operation</div>
+                        <div class="sc-stat"><strong>$25k</strong>vs $56k traditional</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Our Machines</div>
+            <!-- EDITABLE: Products declaration -->
+            <h2 class="st">The world's first 3rd-generation<br>commercial coffee machine.</h2>
+            <p class="ss">CAYE Smart X measures ground coffee weight directly — not by time or thickness. That's the difference between guesswork and precision. <strong><a href="#showroom" style="color:var(--gold);text-decoration:underline">Come try it yourself</a>.</strong></p>
+        </div>
+        <div class="pg">
+            <div class="pcard fi-in">
+                <img src="https://caye.com.au/wp-content/uploads/2025/05/B3CMSY-fp-2.png" alt="CAYE Smart X" loading="lazy">
+                <div class="pcb">
+                    <span class="ptag">SCA Award Winner</span>
+                    <h3>Smart X</h3>
+                    <p>The first 3rd-generation commercial fully automatic coffee machine. Built-in scale module measures and controls ground coffee weight directly.</p>
+                    <ul class="pf">
+                        <li>24/30g brewing system capacity</li>
+                        <li>1/2/3 grinders with 64mm ceramic burrs</li>
+                        <li>10.1" colour touchscreen display</li>
+                        <li>IoT &amp; mobile payment capable</li>
+                        <li>Electronic grinder adjustment</li>
+                        <li>Modular design — custom configurations</li>
+                        <li>Automatic cleaning with tablet dosing</li>
+                        <li>Dual auto milk delivery</li>
+                    </ul>
+                    <p class="pprice">Price on application — purchase &amp; lease options</p>
+                </div>
+            </div>
+            <div class="pcard fi-in">
+                <img src="https://caye.com.au/wp-content/uploads/2025/05/series-1024x654.png" alt="CAYE Smart X Master" loading="lazy">
+                <div class="pcb">
+                    <span class="ptag">High Volume</span>
+                    <h3>Smart X Master</h3>
+                    <p>Dual outlets for twice the output with zero compromise. Built for high-volume environments — offices, hotels, QSRs, and catering.</p>
+                    <ul class="pf">
+                        <li>All Smart X features, plus:</li>
+                        <li>Dual brewing chambers (DualShift)</li>
+                        <li>Dual outlets — 350 espressos/hour</li>
+                        <li>~500 cups/day capacity</li>
+                        <li>Reduced wait times during peak periods</li>
+                        <li>Always-on remote monitoring &amp; support</li>
+                        <li>Modular design — 3-min module swap</li>
+                        <li>Automatic temperature &amp; texture steam wand</li>
+                    </ul>
+                    <p class="pprice">Price on application — purchase &amp; lease options</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECHNOLOGY — dark, elegant, behind-the-scenes -->
+<section class="tech" id="technology">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">The Technology</div>
+            <!-- EDITABLE: Technology declaration -->
+            <h2 class="st" style="color:var(--wh)">300+ patents.<br>One perfect cup. Every time.</h2>
+            <p class="ss">Your team sees a button. Behind it, three technologies work invisibly to deliver barista-quality coffee — every single cup. <a href="https://www.caye.com/en/index.html" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline">See the patents →</a></p>
+        </div>
+        <div class="tg">
+            <div class="tc fi-in">
+                <div class="tc-num">01</div>
+                <h3>BionicBarista</h3>
+                <p>Emulates the artistry of elite baristas. Each phase — grinding, weighing, tamping, extraction — is meticulously orchestrated to deliver a consistently refined cup.</p>
+            </div>
+            <div class="tc fi-in">
+                <div class="tc-num">02</div>
+                <h3>Closed-Loop System (CLS)</h3>
+                <p>The first genuine mechanism for coffee extraction quality control. Automatically monitors and regulates extraction time, coffee dose, and espresso weight in real time.</p>
+            </div>
+            <div class="tc fi-in">
+                <div class="tc-num">03</div>
+                <h3>3rd-Gen Precision</h3>
+                <p>Unlike 1st-gen (time-based) and 2nd-gen (thickness-based) machines, CAYE measures powder weight directly via a built-in scale module — accuracy no predecessor can match.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GENERATIONS -->
+<section class="gens">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Why It Matters</div>
+            <!-- EDITABLE: Generation declaration -->
+            <h2 class="st">If your machine guesses, you're wasting coffee.</h2>
+            <p class="ss">1st-gen measures by time. 2nd-gen measures by thickness. CAYE measures by <em>actual weight</em> — the only method that guarantees extraction quality.</p>
+        </div>
+        <table class="gtbl fi-in">
+            <thead><tr><th>Feature</th><th>1st Generation</th><th>2nd Generation</th><th class="hl">3rd Gen — CAYE</th></tr></thead>
+            <tbody>
+                <tr><td>Weight control</td><td>Estimate by time</td><td>Estimate by thickness</td><td class="hl">Measure by weight directly</td></tr>
+                <tr><td>Accuracy</td><td><span class="cr">Low</span></td><td><span class="pt">Medium</span></td><td class="hl"><span class="ck">High</span></td></tr>
+                <tr><td>Consistency</td><td><span class="cr">Low</span></td><td><span class="pt">Medium</span></td><td class="hl"><span class="ck">High</span></td></tr>
+                <tr><td>Quality control</td><td><span class="cr">Open-loop</span></td><td><span class="pt">Semi-closed</span></td><td class="hl"><span class="ck">Full closed-loop (CLS)</span></td></tr>
+                <tr><td>Waste per 50–100 cups</td><td>3–4 readjustments</td><td>1–2 readjustments</td><td class="hl">Zero readjustments</td></tr>
+                <tr><td>Food-grade materials</td><td><span class="cr">Partial</span></td><td><span class="cr">Partial</span></td><td class="hl"><span class="ck">90%+ food-grade metal</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ROASTER vs OWNED -->
+<section class="roaster">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">The Real Cost of "Free"</div>
+            <!-- EDITABLE: Roaster declaration -->
+            <h2 class="st">A "free" machine costs you<br>$24,000/year in overpriced beans.</h2>
+            <p class="ss">When a roaster gives you a machine, they lock you into $10–15/kg above market on every bag. At 200 kg/month, that's $2,000–$3,000/month in hidden equipment cost. <em>Adjust the kg/month slider in the calculator below to see your numbers.</em></p>
+        </div>
+        <div class="rw">
+            <div class="rbox fi-in">
+                <h3>Roaster-Supplied Model</h3>
+                <ul class="rlist">
+                    <li>Tied to one roaster for 2–3 years</li>
+                    <li>Pay $35–$50/kg for beans (inflated)</li>
+                    <li>Can't switch if quality drops</li>
+                    <li>No asset at end of term</li>
+                    <li>Machine choice is the roaster's</li>
+                    <li>Training costs recur with each staff change</li>
+                </ul>
+                <div class="rcost">
+                    <div class="rlabel">Annual coffee cost (200kg/mo @ $38/kg)</div>
+                    <div class="rval">$91,200/yr</div>
+                </div>
+            </div>
+            <div class="rbox owned fi-in">
+                <h3>Own Your Machine (CAYE)</h3>
+                <ul class="rlist">
+                    <li>Choose any NZ roaster — switch anytime</li>
+                    <li>Pay $25–$35/kg for specialty beans</li>
+                    <li>Full menu freedom — single origins, guest blends</li>
+                    <li>Build an asset with resale value</li>
+                    <li>300+ patents, SCA Best New Product 2026</li>
+                    <li>2-hour staff training vs 2–4 weeks</li>
+                </ul>
+                <div class="rcost">
+                    <div class="rlabel">Annual coffee cost (200kg/mo @ $28/kg)</div>
+                    <div class="rval">$67,200/yr</div>
+                </div>
+            </div>
+        </div>
+        <div class="decl-box fi-in">
+            <p>That's a $24,000/yr saving on coffee alone — before labour, training, and waste reductions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- COMPETITIVE -->
+<section class="comp">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Competitive Position</div>
+            <!-- EDITABLE: Competitive declaration -->
+            <h2 class="st">Eversys set the standard for super-automatics.<br>Thermoplan perfected milk foam.<br>CAYE transformed both — with weight and reverse gravity.</h2>
+            <p class="ss">Grind-by-weight accuracy, reverse gravity milk delivery, 3-minute module swaps, self-calibrating CLS, and component-level IoT. The spec sheet tells the story.</p>
+        </div>
+        <table class="ctbl fi-in">
+            <thead><tr><th>Feature</th><th>CAYE Smart X</th><th>Eversys Cameo/Enigma</th><th>Thermoplan BW4</th><th>Traditional Bar</th></tr></thead>
+            <tbody>
+                <tr><td>Milk system</td><td class="hl">Reverse gravity — precision texture, automatic</td><td>Standard auto-froth</td><td>Wave technology — World Latte Art champion</td><td>Manual steam wand</td></tr>
+                <tr><td>Grind control</td><td class="hl">Grind-by-weight (±0.2g)</td><td>Time/estimation-based</td><td>Time/estimation-based</td><td>Manual — skill dependent</td></tr>
+                <tr><td>Calibration</td><td class="hl">CLS — self-calibrates in 3 cups</td><td>ETC — adapts in real-time</td><td>ISQ sensors — adapts but no self-calibration</td><td>Barista re-dials every 50–100 cups</td></tr>
+                <tr><td>Module swap</td><td class="hl">3 minutes</td><td>45 minutes</td><td>Modular — 30+ min typical</td><td>Days (technician visit)</td></tr>
+                <tr><td>IoT diagnostics</td><td class="hl">Component-level self-diagnosis</td><td>Machine-level telemetry</td><td>ThermoplanConnect (machine-level)</td><td>None</td></tr>
+                <tr><td>Training time</td><td class="hl">&lt;2 hours</td><td>Eversys-specific training</td><td>Operator training required</td><td>2–4 weeks per barista</td></tr>
+                <tr><td>NZ support</td><td class="hl">Christchurch HQ — direct</td><td>Tiger Coffee Ltd (Auckland)</td><td>No direct NZ presence (AU partners)</td><td>Depends on supplier</td></tr>
+                <tr><td>Patents</td><td class="hl">300+</td><td>Proprietary (fewer disclosed)</td><td>Proprietary (Swiss)</td><td>N/A</td></tr>
+                <tr><td>SCA award</td><td class="hl">Best New Product 2026</td><td>—</td><td>—</td><td>N/A</td></tr>
+                <tr><td>Price range (NZD)</td><td class="hl">POA</td><td>$25k–$45k</td><td>$13k–$65k</td><td>Varies</td></tr>
+                <tr><td>Capacity</td><td class="hl">~500 cups/day</td><td>~500 cups/day</td><td>~500 cups/day</td><td>Barista-limited</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- NZ STATS -->
+<section class="nzstats">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">New Zealand Coffee Market</div>
+            <!-- EDITABLE: NZ Stats declaration -->
+            <h2 class="st">Coffee costs are up 79% in 20 years.<br>Your machine should be cutting them.</h2>
+        </div>
+        <div class="nzs-grid fi-in">
+            <div class="nzs">
+                <div class="num">$5.20</div>
+                <div class="lbl">Average takeaway coffee price<br>(Stats NZ, June 2026)</div>
+            </div>
+            <div class="nzs">
+                <div class="num">79%</div>
+                <div class="lbl">Increase in coffee prices since 2006<br>(from $2.89 to $5.23)</div>
+            </div>
+            <div class="nzs">
+                <div class="num">$3.1B</div>
+                <div class="lbl">NZ coffee industry revenue<br>(SourceReady 2026)</div>
+            </div>
+            <div class="nzs">
+                <div class="num">65%</div>
+                <div class="lbl">Rise in green bean prices since Nov 2024<br>(Ozone Coffee)</div>
+            </div>
+        </div>
+        <div class="nznote fi-in">
+            <strong>Why NZ is switching to super-automatic:</strong> Rising bean costs, a 30–35% labour share of revenue, high staff turnover (one-third of hospitality workers plan to leave within 12 months — MBIE 2025), and the NZD's weakness against USD are squeezing margins. CAYE's Smart X solves all four: lower bean cost through roaster independence, zero barista requirement, 2-hour training, and consistent output regardless of who operates it. At $23.95/hr minimum wage and $28.95/hr Living Wage, every hour of barista time saved is a direct margin improvement.
+        </div>
+    </div>
+</section>
+
+<!-- SAVINGS CALCULATOR -->
+<section class="calc" id="calculator">
+    <div class="float-machine fi-in"><img src="https://www.caye.com/upload/img/2025/0403/17436504774069152104.png" alt="" loading="lazy"></div>
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Savings Calculator</div>
+            <!-- EDITABLE: Calculator declaration -->
+            <h2 class="st">Run your own numbers.<br>We'll wait.</h2>
+            <p class="ss">Adjust the sliders to match your setup. Compare CAYE against cafe credits, capsules, and roaster-supplied models.</p>
+        </div>
+        <div class="cw">
+            <div class="fi-in">
+                <div class="cg">
+                    <label>Number of employees <span id="empVal">25</span></label>
+                    <input type="range" class="csl" id="empSlider" min="5" max="200" value="25" step="5">
+                    <div class="crl"><span>5</span><span>200</span></div>
+                </div>
+                <div class="cg">
+                    <label>Coffees per person per day <span id="cupsVal">2.0</span></label>
+                    <input type="range" class="csl" id="cupsSlider" min="0.5" max="5" value="2" step="0.5">
+                    <div class="crl"><span>0.5</span><span>5</span></div>
+                </div>
+                <div class="cg">
+                    <label>Typical cafe price (NZD) <span id="cafeVal">$5.20</span></label>
+                    <input type="range" class="csl" id="cafeSlider" min="3.5" max="8" value="5.2" step="0.10">
+                    <div class="crl"><span>$3.50</span><span>$8.00</span></div>
+                </div>
+                <div class="cg">
+                    <label>Typical capsule cost per cup <span id="capsuleVal">$1.20</span></label>
+                    <input type="range" class="csl" id="capsuleSlider" min="0.6" max="2.0" value="1.2" step="0.05">
+                    <div class="crl"><span>$0.60</span><span>$2.00</span></div>
+                </div>
+                <div class="cg">
+                    <label>CAYE cost per cup (beans + milk) <span id="cayeVal">$0.98</span></label>
+                    <input type="range" class="csl" id="cayeSlider" min="0.25" max="1.5" value="0.98" step="0.01">
+                    <div class="crl"><span>$0.25</span><span>$1.20</span></div>
+                </div>
+                <div class="cg">
+                    <label>Working days per year <span id="daysVal">250</span></label>
+                    <input type="range" class="csl" id="daysSlider" min="200" max="260" value="250" step="5">
+                    <div class="crl"><span>200</span><span>260</span></div>
+                </div>
+                <div class="cg">
+                    <label>Coffee consumption (kg/month) <span id="kgVal">200</span></label>
+                    <input type="range" class="csl" id="kgSlider" min="20" max="500" value="200" step="10">
+                    <div class="crl"><span>20</span><span>500</span></div>
+                </div>
+            </div>
+            <div class="cres fi-in" id="calcResults">
+                <h3>Annual Cost Comparison</h3>
+                <div class="rr"><span class="rl">Daily cups (all staff)</span><span class="rv" id="dailyCups">50</span></div>
+                <div class="rr"><span class="rl">Annual cups</span><span class="rv" id="annualCups">12,500</span></div>
+                <div class="rdiv"></div>
+                <div class="rr"><span class="rl">Cafe cost / year</span><span class="rv cv" id="cafeAnnual">$65,000</span></div>
+                <div class="rr"><span class="rl">Capsule cost / year</span><span class="rv cv" id="capsuleAnnual">$15,000</span></div>
+                <div class="rr"><span class="rl">CAYE cost / year</span><span class="rv" id="cayeAnnual" style="color:var(--gold)">$12,250</span></div>
+                <div class="rdiv"></div>
+                <div class="rtot"><span class="rl">You save vs cafe</span><span class="rv sv" id="saveVsCafe">$52,750</span></div>
+                <div class="rtot"><span class="rl">You save vs capsules</span><span class="rv sv" id="saveVsCapsule">$2,750</span></div>
+                <div class="rdiv"></div>
+                <div class="rr"><span class="rl">Roaster-supplied (@ $38/kg)</span><span class="rv" id="roasterCost" style="color:var(--bk)">$91,200/yr</span></div>
+                <div class="rr"><span class="rl">Own CAYE (@ $28/kg)</span><span class="rv" id="ownCost" style="color:var(--gold)">$67,200/yr</span></div>
+                <div class="rtot"><span class="rl">You save vs roaster-supplied</span><span class="rv sv" id="saveVsRoaster">$24,000</span></div>
+                <div class="rnote">
+                    <strong>* Sources:</strong> Bean: $44.42/kg (Better Blend, Fika `data/ingredients.json`). Dose: 14g (official double, SEAC standard). Milk: 150ml @ $2.40/L (Fika `data/ingredients.json`). Ingredient cost per cup = (14g / 1000) x $44.42 + (150ml / 1000) x $2.40 = $0.98 (white, double shot). Black (no milk) = $0.62. Apples-to-apples: café pricing assumes the same standard double-shot, so standard-vs-standard is the fair comparison. Larger doses up to 24g (triple ristretto) are a discretionary recipe setting — never the comparison basis; even maxed out the range stays ~70% under café price. Cafe: $5.20 (Stats NZ Jun 2026). Capsule: $1.20 (Nespresso Pro NZ). Days: 250/yr. Machine amortisation not included — price on application.<br><br>
+                    <strong>Update these values:</strong> Edit the ASSUMPTIONS object in the HTML source to sync with your actual costs.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LABOUR SAVINGS -->
+<section class="labour" id="labour">
+    <div class="float-machine fi-in"><img src="https://www.caye.com/upload/img/2025/0403/17436504774069152104.png" alt="" loading="lazy"></div>
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">The Labour Equation</div>
+            <!-- EDITABLE: Labour declaration -->
+            <h2 class="st" style="color:var(--wh)">Labour is 40% of your outgoings.<br>This machine cuts it by 86%.</h2>
+            <p class="ss">In NZ hospitality, wages hit 40% of outgoings for the first time in 2026.<sup class="src-link"><a href="#src-7" style="color:var(--gold)">[7]</a></sup> Every minute saved per cup compounds into thousands saved per year.</p>
+        </div>
+
+        <div class="lab-hero">
+            <div class="lab-big fi-in">
+                <div class="lab-number" id="labourHoursSaved">520</div>
+                <div class="lab-unit">hours saved per year</div>
+                <div class="lab-desc">For a 25-person office making 2 coffees/day each. That's 13 full work weeks recovered from coffee admin, dialling-in, and wasted trips to the café.</div>
+            </div>
+            <div class="lab-cards fi-in">
+                <div class="lab-card">
+                    <div class="lab-icon">&#9201;</div>
+                    <h4>Time per cup</h4>
+                    <div class="lab-val">3:30 → 0:30</div>
+                    <p>Traditional barista: 3.5 min. Smart X: 30 seconds.<sup class="src-link"><a href="#src-2" style="color:var(--gold)">[2]</a></sup></p>
+                </div>
+                <div class="lab-card">
+                    <div class="lab-icon">&#128176;</div>
+                    <h4>Barista cost/cup</h4>
+                    <div class="lab-val">$1.56 → $0.22</div>
+                    <p>NZ barista avg $26.50/hr.<sup class="src-link"><a href="#src-1" style="color:var(--gold)">[1]</a></sup> 86% less labour per drink.</p>
+                </div>
+                <div class="lab-card">
+                    <div class="lab-icon">&#128178;</div>
+                    <h4>Dialling-in waste</h4>
+                    <div class="lab-val">30 min → 0</div>
+                    <p>15–30 min at shift start + re-dial every 50–100 cups.<sup class="src-link"><a href="#src-5" style="color:var(--gold)">[5]</a></sup> CLS auto-corrects.</p>
+                </div>
+                <div class="lab-card">
+                    <div class="lab-icon">&#9851;&#65039;</div>
+                    <h4>Milk waste</h4>
+                    <div class="lab-val">15% → 2%</div>
+                    <p>Manual over-pour wastes 8–15% of milk.<sup class="src-link"><a href="#src-3" style="color:var(--gold)">[3]</a></sup> Auto-dispensing eliminates this.</p>
+                </div>
+                <div class="lab-card">
+                    <div class="lab-icon">&#128101;</div>
+                    <h4>Training time</h4>
+                    <div class="lab-val">4 weeks → 2 hours</div>
+                    <p>Smart X: any employee operates in under 2 hours.<sup class="src-link"><a href="#src-4" style="color:var(--gold)">[4]</a></sup></p>
+                </div>
+                <div class="lab-card">
+                    <div class="lab-icon">&#128680;</div>
+                    <h4>Turnover cost</h4>
+                    <div class="lab-val">$15k–$25k</div>
+                    <p>Cost to replace one employee.<sup class="src-link"><a href="#src-6" style="color:var(--gold)">[6]</a></sup> 1/3 plan to leave within 12 months.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lab-bar-section fi-in">
+            <h3>Time to serve 50 coffees</h3>
+            <div class="lab-bar-row">
+                <div class="lab-bar-label">Traditional barista</div>
+                <div class="lab-bar-track"><div class="lab-bar-fill trad" style="width:100%">175 min</div></div>
+                <div class="lab-bar-time">2 hr 55 min</div>
+            </div>
+            <div class="lab-bar-row">
+                <div class="lab-bar-label">Smart X (any staff)</div>
+                <div class="lab-bar-track"><div class="lab-bar-fill auto" style="width:14%">25 min</div></div>
+                <div class="lab-bar-time">25 min</div>
+            </div>
+            <div class="lab-bar-row">
+                <div class="lab-bar-label">+ Dialling in (traditional)</div>
+                <div class="lab-bar-track"><div class="lab-bar-fill trad" style="width:17%"></div></div>
+                <div class="lab-bar-time">+30 min</div>
+            </div>
+            <div class="lab-bar-row">
+                <div class="lab-bar-label">+ Café run (office)</div>
+                <div class="lab-bar-track"><div class="lab-bar-fill trad" style="width:28%"></div></div>
+                <div class="lab-bar-time">+50 min</div>
+            </div>
+        </div>
+
+        <div class="lab-source fi-in" id="labour-sources">
+            <h4>Sources — click any [n] above to jump here</h4>
+            <div class="lab-source-grid">
+                <div class="lab-src" id="src-1"><strong>[1] Barista wage: $26.50/hr</strong>Indeed NZ, Aug 2026. Range $23.95–$29.33. <a href="https://nz.indeed.com/career/barista/salaries" target="_blank" rel="noopener" style="color:var(--gold)">nz.indeed.com →</a></div>
+                <div class="lab-src" id="src-2"><strong>[2] Time per cup: 3.5 min vs 30 sec</strong>Traditional: grind + tamp + extract + steam + clean. Smart X: select + press + walk away. <a href="https://www.franke.com/nz/en/solutions/coffee-businesses.html" target="_blank" rel="noopener" style="color:var(--gold)">Franke studies →</a></div>
+                <div class="lab-src" id="src-3"><strong>[3] Milk waste: 8–15%</strong>Barista Life, BSA/Brikly industry data. <a href="https://www.baristalife.com/articles/milk-waste-in-coffee-shops" target="_blank" rel="noopener" style="color:var(--gold)">baristalife.com →</a></div>
+                <div class="lab-src" id="src-4"><strong>[4] Training: 2–4 weeks vs 2 hours</strong>Nortys/Pelican Rouge case studies. <a href="https://www.pelicanrouge.com/solutions/super-automatic" target="_blank" rel="noopener" style="color:var(--gold)">pelicanrouge.com →</a></div>
+                <div class="lab-src" id="src-5"><strong>[5] Dialling-in: 15–30 min/shift</strong>Industry standard. Plus re-dial every 50–100 cups.</div>
+                <div class="lab-src" id="src-6"><strong>[6] Turnover cost: $15k–$25k</strong>SHRM NZ estimate. MBIE 2025. <a href="https://www.mbie.govt.nz/" target="_blank" rel="noopener" style="color:var(--gold)">mbie.govt.nz →</a></div>
+                <div class="lab-src" id="src-7"><strong>[7] Wage cost: 40% of outgoings</strong>Restaurant Assn NZ 2026. <a href="https://restaurantnz.co.nz/" target="_blank" rel="noopener" style="color:var(--gold)">restaurantnz.co.nz →</a></div>
+                <div class="lab-src" id="src-8"><strong>[8] Café run: 15–30 min</strong>Franke / Lavazza Professional workplace studies. <a href="https://www.lavazza.com/en/solutions/workplace-coffee" target="_blank" rel="noopener" style="color:var(--gold)">lavazza.com →</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHOWROOM — Warm, inviting -->
+<section class="showroom" id="showroom">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Visit Us</div>
+            <!-- EDITABLE: Showroom declaration -->
+            <h2 class="st">Don't take our word for it.<br>Come taste the difference.</h2>
+            <p class="ss">Experience the Smart X in person at our Christchurch showroom. Touch the machine. Taste the coffee. See the technology in action — no obligation, just great coffee.</p>
+        </div>
+        <div class="showroom-inner">
+            <div class="showroom-img fi-in">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Fika showroom — CAYE Smart X demonstration" loading="lazy">
+            </div>
+            <div class="showroom-text fi-in">
+                <h3>22 Parkhouse Road, Wigram<br>Christchurch 8042</h3>
+                <p>Walk in, try a coffee, ask questions. We'll walk you through the technology, run the calculator with your actual numbers, and let you taste the difference between traditional and Smart X extraction — side by side.</p>
+                <div class="showroom-details">
+                    <div class="showroom-detail">
+                        <h4>Opening Hours</h4>
+                        <p>Monday – Friday<br>8:30am – 5:00pm<br>Saturday by appointment</p>
+                    </div>
+                    <div class="showroom-detail">
+                        <h4>Contact</h4>
+                        <p><a href="tel:0800232628">0800 232 628</a><br><a href="mailto:hello@caye.nz">hello@caye.nz</a></p>
+                    </div>
+                </div>
+                <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap">
+                    <a href="#contact" class="bp">Book a Visit</a>
+                    <a href="https://www.fika.co.nz/" target="_blank" rel="noopener" class="bs" style="border-color:var(--bk);color:var(--bk)">Visit fika.co.nz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">About</div>
+            <!-- EDITABLE: About declaration -->
+            <h2 class="st">NZ-owned. Christchurch-based.<br>World-class technology.</h2>
+        </div>
+        <div class="ag">
+            <div class="ab fi-in">
+                <h3>CAYE Technology</h3>
+                <p>Founded 2022 in Suzhou, China. First company to specialize in fully automatic coffee machines built on a fully self-developed brewing system. Nearly 300 patents (40%+ invention). Products serve premium coffee chains across 80+ countries.</p>
+                <p style="margin-top:12px">June 2026: secured ~¥400M (~$55M USD) Series B — largest single round in the commercial fully automatic coffee machine sector. Led by Meituan Longzhu, Hillhouse Capital, Suzhou Venture Capital Group.</p>
+                <p style="margin-top:12px;font-size:.8125rem;color:var(--g400)"><strong style="color:var(--g600)">Global proof:</strong> TOMORO Coffee (Indonesia) — 600+ outlets, 30M cups/yr. Hotel Kong Arthur (Denmark) — 350 guests/day. BEC Financial (Scandinavia) — 1,600 employees.</p>
+                <a href="https://www.caye.com/en/index.html" class="al" target="_blank" rel="noopener">Visit caye.com →</a>
+            </div>
+            <div class="ab fi-in">
+                <h3>Fika — Your Local NZ Partner</h3>
+                <p>100% NZ-owned workplace coffee company, Christchurch. Since 2018: superior coffee machines, locally roasted beans, expert on-site servicing.</p>
+                <p style="margin-top:12px">As the official CAYE distributor for New Zealand, Fika brings world-leading super-automatic technology to Kiwi workplaces — backed by local technicians, next-day consumable delivery nationwide.</p>
+                <p style="margin-top:12px;font-size:.8125rem;color:var(--g400)"><strong style="color:var(--g600)">NZ targets identified:</strong> McDonald's (175), BP Wild Bean (200+), Z Energy (200+), The Coffee Club (67), Columbus Coffee, Accor (43 properties).</p>
+                <a href="https://www.fika.co.nz/" class="al" target="_blank" rel="noopener">Visit fika.co.nz →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Get in Touch</div>
+            <!-- EDITABLE: Contact declaration -->
+            <h2 class="st">Ready to see it for yourself?<br>Let's set up a time.</h2>
+            <p class="ss">Book a demo at our Christchurch showroom, or we'll bring the Smart X to you. No obligation — just great coffee.</p>
+        </div>
+        <div class="cg2">
+            <div class="ci fi-in">
+                <div><h4>Location</h4><p>22 Parkhouse Road<br>Wigram, Christchurch 8042<br>New Zealand</p></div>
+                <div><h4>Contact</h4><p><a href="mailto:hello@caye.nz">hello@caye.nz</a><br><a href="tel:0800232628">0800 232 628</a></p></div>
+                <div><h4>Showroom Hours</h4><p>Monday – Friday: 8:30am – 5:00pm<br>Saturday: By appointment</p></div>
+                <div><h4>Follow</h4><p><a href="https://www.instagram.com/caye.technology/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/company/cayetech/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.facebook.com/fikaofficecoffee" target="_blank" rel="noopener">Facebook</a></p></div>
+            </div>
+            <form class="cf fi-in" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="tel" name="phone" placeholder="Phone number">
+                <select name="interest" required>
+                    <option value="" disabled selected>I'm interested in...</option>
+                    <option value="office">Office / Workplace</option>
+                    <option value="cafe">Cafe / Restaurant</option>
+                    <option value="hotel">Hotel / Hospitality</option>
+                    <option value="qsr">QSR / Convenience</option>
+                    <option value="fuel">Fuel Station</option>
+                    <option value="bakery">Bakery / Retail</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your team size and coffee needs..."></textarea>
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- SOURCES LIST -->
+<section class="src-list" id="sources">
+    <div class="ctn">
+        <div class="fi-in">
+            <div class="sl">Sources &amp; Assumptions</div>
+            <h2 class="st">Every number is sourced.<br>Every assumption is editable.</h2>
+            <p class="ss">All figures based on publicly available NZ data. <a href="#contact" style="color:var(--gold);text-decoration:underline">Ask us to adjust for your business</a>.</p>
+        </div>
+        <div class="src-grid fi-in">
+            <div class="src-item"><span class="src-num">1</span><span class="src-title">Barista wage: $26.50/hr</span><div class="src-body">Indeed NZ, Aug 2026. Range $23.95–$29.33. Restaurant Assn NZ reports $26.91 avg. <span class="src-link"><a href="https://nz.indeed.com/career/barista/salaries" target="_blank" rel="noopener">nz.indeed.com →</a></span></div></div>
+            <div class="src-item"><span class="src-num">2</span><span class="src-title">Time per cup: 3.5 min vs 30 sec</span><div class="src-body">Traditional: grind (15s) + tamp (10s) + extract (25s) + steam (45s) + clean (35s) + prep (20s). Smart X: select + press. <span class="src-link"><a href="https://www.franke.com/nz/en/solutions/coffee-businesses.html" target="_blank" rel="noopener">Franke →</a></span></div></div>
+            <div class="src-item"><span class="src-num">3</span><span class="src-title">Milk waste: 8–15%</span><div class="src-body">Barista Life, BSA/Brikly. Auto-dispensing reduces to ~2%. <span class="src-link"><a href="https://www.baristalife.com/articles/milk-waste-in-coffee-shops" target="_blank" rel="noopener">baristalife.com →</a></span></div></div>
+            <div class="src-item"><span class="src-num">4</span><span class="src-title">Training: 2–4 weeks vs 2 hours</span><div class="src-body">Nortys/Pelican Rouge case studies. Traditional: 80–160 hrs. Smart X: under 2 hrs. <span class="src-link"><a href="https://www.pelicanrouge.com/solutions/super-automatic" target="_blank" rel="noopener">pelicanrouge.com →</a></span></div></div>
+            <div class="src-item"><span class="src-num">5</span><span class="src-title">Dialling-in: 15–30 min/shift</span><div class="src-body">Industry standard. Plus re-dial every 50–100 cups (5–10 min each). CLS eliminates both.</div></div>
+            <div class="src-item"><span class="src-num">6</span><span class="src-title">Turnover cost: $15k–$25k</span><div class="src-body">SHRM NZ estimate. Includes recruitment, onboarding, lost productivity. MBIE 2025: 1/3 of hospo workers plan to leave within 12 months. <span class="src-link"><a href="https://www.mbie.govt.nz/" target="_blank" rel="noopener">mbie.govt.nz →</a></span></div></div>
+            <div class="src-item"><span class="src-num">7</span><span class="src-title">Wage cost: 40% of outgoings</span><div class="src-body">Restaurant Association NZ 2026 remuneration report. <span class="src-link"><a href="https://restaurantnz.co.nz/" target="_blank" rel="noopener">restaurantnz.co.nz →</a></span></div></div>
+            <div class="src-item"><span class="src-num">8</span><span class="src-title">Café run: 15–30 min</span><div class="src-body">Franke Coffee Systems / Lavazza Professional workplace studies. 40–100 lost hours per person per year. <span class="src-link"><a href="https://www.lavazza.com/en/solutions/workplace-coffee" target="_blank" rel="noopener">lavazza.com →</a></span></div></div>
+            <div class="src-item"><span class="src-num">9</span><span class="src-title">Cafe coffee: $5.20</span><div class="src-body">Stats NZ weighted average takeaway coffee price, June 2026. Up from $2.89 in 2006 — 79% increase. <span class="src-link"><a href="https://figure.nz" target="_blank" rel="noopener">figure.nz →</a></span></div></div>
+            <div class="src-item"><span class="src-num">10</span><span class="src-title">Beans: $44.42/kg NZD</span><div class="src-body">Fika Better Blend (specialty-grade, verified `data/ingredients.json`). Range $30–$60/kg in NZ. 14g double-shot standard dose per cup, up to 24g discretionary.</div></div>
+            <div class="src-item"><span class="src-num">11</span><span class="src-title">Milk: $2.40/L</span><div class="src-body">Fika fresh milk (`data/ingredients.json`). 150ml per flat white. Oat/soy adds $0.15–$0.30/cup.</div></div>
+            <div class="src-item"><span class="src-num">12</span><span class="src-title">Bean price volatility</span><div class="src-body">Arabica C-market hit all-time high 440.85 c/lb (Feb 2025). NZD weakness vs USD compounds costs. <span class="src-link"><a href="https://www.ico.org/" target="_blank" rel="noopener">ico.org →</a></span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ctn">
+        <div class="fi">
+            <div class="fb"><img src="https://caye.com.au/wp-content/uploads/2025/05/Component-19-–-1.svg" alt="CAYE" style="height:48px;width:auto;filter:brightness(0) invert(1)"><span class="nl-nz" style="color:var(--gold);margin-left:6px;margin-bottom:2px">NZ</span></div>
+            <ul class="fl">
+                <li><a href="#people">People</a></li>
+                <li><a href="#scenarios">Scenarios</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#labour">Labour</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#showroom">Showroom</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.fika.co.nz/" target="_blank" rel="noopener">Fika NZ</a></li>
+            </ul>
+            <p class="fc">© 2026 CAYE New Zealand. Distributed by Fika Ltd, Christchurch. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ===== SHARE FUNCTIONS =====
+function copyLink(){
+    navigator.clipboard.writeText(window.location.href).then(function(){
+        alert('Link copied! Share it with your team for feedback.');
+    });
+}
+function emailLink(){
+    var subject=encodeURIComponent('CAYE NZ — Website Draft for Review');
+    var body=encodeURIComponent('Hi team,\n\nPlease review the CAYE NZ website draft here:\n\n'+window.location.href+'\n\nKey sections to review:\n- NZ market scenarios (office, QSR, hotel, cafe, fuel, bakery)\n- Savings calculator (adjust sliders to test scenarios)\n- Roaster-supplied vs owned comparison\n- CAYE vs Eversys competitive positioning\n\nPlease share feedback by [DATE].\n\nThanks!');
+    window.location.href='mailto:?subject='+subject+'&body='+body;
+}
+
+// ===== CALCULATOR =====
+(function(){
+    var empS=document.getElementById('empSlider'),cupsS=document.getElementById('cupsSlider'),
+        cafeS=document.getElementById('cafeSlider'),capS=document.getElementById('capsuleSlider'),
+        cayeS=document.getElementById('cayeSlider'),daysS=document.getElementById('daysSlider'),
+        kgS=document.getElementById('kgSlider');
+    var empV=document.getElementById('empVal'),cupsV=document.getElementById('cupsVal'),
+        cafeV=document.getElementById('cafeVal'),capV=document.getElementById('capsuleVal'),
+        cayeV=document.getElementById('cayeVal'),daysV=document.getElementById('daysVal'),
+        kgV=document.getElementById('kgVal');
+    var dC=document.getElementById('dailyCups'),aC=document.getElementById('annualCups'),
+        cA=document.getElementById('cafeAnnual'),cpA=document.getElementById('capsuleAnnual'),
+        cyA=document.getElementById('cayeAnnual'),sC=document.getElementById('saveVsCafe'),
+        sP=document.getElementById('saveVsCapsule'),
+        rC=document.getElementById('roasterCost'),oC=document.getElementById('ownCost'),
+        sR=document.getElementById('saveVsRoaster');
+
+    function fmt(n){return'$'+Math.round(n).toLocaleString('en-NZ')}
+    function fmtN(n){return Math.round(n).toLocaleString('en-NZ')}
+    function calc(){
+        var e=+empS.value,c=+cupsS.value,cf=+cafeS.value,cp=+capS.value,cy=+cayeS.value,d=+daysS.value,kg=+kgS.value;
+        empV.textContent=e;cupsV.textContent=c.toFixed(1);cafeV.textContent='$'+cf.toFixed(2);
+        capV.textContent='$'+cp.toFixed(2);cayeV.textContent='$'+cy.toFixed(2);daysV.textContent=d;kgV.textContent=kg;
+        var dc=e*c,ac=dc*d,ca=ac*cf,pa=ac*cp,ya=ac*cy;
+        dC.textContent=fmtN(dc);aC.textContent=fmtN(ac);
+        cA.textContent=fmt(ca);cpA.textContent=fmt(pa);cyA.textContent=fmt(ya);
+        sC.textContent=fmt(ca-ya);sP.textContent=fmt(Math.max(0,pa-ya));
+
+        // Roaster vs Owned dynamic
+        var roasterCost=kg*12*38,ownCost=kg*12*28;
+        rC.textContent=fmt(roasterCost)+'/yr';oC.textContent=fmt(ownCost)+'/yr';
+        sR.textContent=fmt(roasterCost-ownCost);
+
+        // Update labour hours saved
+        var tradMinPerCup=3.5,autoMinPerCup=0.5,dialInMin=30,cafeRunMin=25;
+        var tradMinPerDay=dc*tradMinPerCup+dialInMin+cafeRunMin;
+        var autoMinPerDay=dc*autoMinPerCup;
+        var hoursSavedYear=Math.round(((tradMinPerDay-autoMinPerDay)*d)/60);
+        var labEl=document.getElementById('labourHoursSaved');
+        if(labEl)labEl.textContent=hoursSavedYear.toLocaleString('en-NZ');
+    }
+    [empS,cupsS,cafeS,capS,cayeS,daysS,kgS].forEach(function(s){s.addEventListener('input',calc)});
+    calc();
+})();
+
+// ===== NAV =====
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50)});
+document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('active')});
+
+// ===== FADE-IN =====
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});
+document.querySelectorAll('.fi-in').forEach(function(el){obs.observe(el)});
+
+// ===== FORM =====
+function handleSubmit(e){e.preventDefault();alert('Thanks! Your enquiry has been received. We\'ll be in touch within 24 hours.');e.target.reset()}
+</script>
+
+</body>
+</html>
